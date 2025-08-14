@@ -94,13 +94,66 @@ Em caso de erro ou dúvida, o assistente informa e solicita que o comando seja r
 
 ---
 
-## 7. Conclusão
+## 7. Fluxo de Interação
+
+O fluxo de interação foi projetado para ser intuitivo e direto, permitindo que o usuário realize ações complexas de busca e filtragem usando comandos de voz em linguagem natural. Ele se baseia nos comandos disponíveis na interface e em possíveis cenários de uso.
+
+### Fluxo Principal de Interação
+
+* *Início da Conversa:*
+    * *Usuário:* "Olá XPTO" / "Bom dia assistente" / "Preciso de ajuda"
+    * *Assistente:* "Olá! Em que posso ajudar?"
+* *Busca por Documentos:*
+    * *Usuário:* "Procurar relatórios" / "Buscar contratos" / "Encontrar propostas" / "Localizar documentos de vendas"
+    * *Assistente:* "Buscando [termo da busca]. Encontrei os seguintes documentos..."
+* *Filtragem por Departamento:*
+    * *Usuário:* "Mostrar documentos de vendas" / "Listar projetos de tecnologia" / "Exibir relatórios de marketing" / "Documentos do financeiro"
+    * *Assistente:* "Exibindo documentos do departamento de [nome do departamento]."
+* *Filtragem por Prioridade:*
+    * *Usuário:* "Tarefas de alta prioridade" / "Projetos urgentes" / "Itens de prioridade média" / "Itens de baixa prioridade"
+    * *Assistente:* "Exibindo [tipo de item] com prioridade [prioridade]."
+* *Filtragem por Status:*
+    * *Usuário:* "Projetos ativos" / "Documentos pendentes" / "Tarefas concluídas" / "Itens inativos"
+    * *Assistente:* "Exibindo [tipo de item] com status [status]."
+* *Comandos Especiais:*
+    * *Usuário:* "Limpar resultados"
+    * *Assistente:* "Resultados limpos. O que mais posso fazer por você?"
+    * *Usuário:* "Mostrar histórico"
+    * *Assistente:* "Exibindo seu histórico de pesquisas."
+    * *Usuário:* "Repetir última busca"
+    * *Assistente:* "Repetindo sua última busca."
+    * *Usuário:* "Ajuda com comandos"
+    * *Assistente:* "Aqui estão alguns exemplos de comandos que você pode usar: 'Buscar relatórios', 'Mostrar documentos de vendas', 'Projetos urgentes'."
+
+### Mapeamento de Diálogos e Cenários
+
+Para prever as diferentes intenções do usuário, foram mapeados os seguintes cenários:
+
+* *Cenário 1: Busca e Filtragem Combinada*
+    * *Usuário:* "Mostre os projetos de tecnologia que estão ativos."
+    * *Assistente:* "Buscando projetos ativos do departamento de tecnologia. Encontrei os seguintes resultados..."
+* *Cenário 2: Falta de Resultados*
+    * *Usuário:* "Mostrar documentos do financeiro."
+    * *Assistente:* "Não encontrei nenhum documento com essa descrição. Gostaria de tentar uma nova busca?"
+* *Cenário 3: Ambiguidade ou Comando Não Reconhecido*
+    * *Usuário:* "Onde está o relatório?"
+    * *Assistente:* "Desculpe, não entendi. Você poderia ser mais específico? Por exemplo: 'Buscar relatórios de vendas'."
+    * (Nota: Conforme visto no vídeo, o assistente pode fornecer exemplos de comandos caso não entenda a instrução.)
+* *Cenário 4: Busca Inespecífica*
+    * *Usuário:* "Quero encontrar um relatório."
+    * *Assistente:* "Que tipo de relatório você procura? Por exemplo: de vendas, de marketing, ou outro?"
+    * *Usuário:* "De marketing."
+    * *Assistente:* "Entendido. Buscando relatórios de marketing."
+
+---
+
+## 8. Conclusão
 
 O protótipo cumpre o objetivo proposto, oferecendo uma simulação funcional de assistente virtual baseado em voz para busca e filtragem de dados da empresa XPTO.
 
 A experiência combina facilidade de uso, acessibilidade e agilidade, sendo um bom ponto de partida para uma implementação completa no futuro.
 
-## 8. Deploy e preview
+## 9. Deploy e preview
 Segue link de acesso para o protótipo funcional. Algumas alterações de design precisaram ser feitas em relação aos wireframes para se adequar ao escopo da solução:
 https://assistente-virtual-x-cddq.bolt.host/
 
