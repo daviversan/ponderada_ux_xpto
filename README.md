@@ -100,6 +100,8 @@ O protótipo cumpre o objetivo proposto, oferecendo uma simulação funcional de
 
 A experiência combina facilidade de uso, acessibilidade e agilidade, sendo um bom ponto de partida para uma implementação completa no futuro.
 
-## 8. Deploy
+## 8. Deploy e preview
 Segue link de acesso para o protótipo funcional. Algumas alterações de design precisaram ser feitas em relação aos wireframes para se adequar ao escopo da solução:
 https://assistente-virtual-x-cddq.bolt.host/
+
+Vídeo do app em funcionamento: https://www.youtube.com/watch?v=VGR8GBbAFRY
